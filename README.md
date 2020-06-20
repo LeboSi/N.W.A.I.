@@ -46,3 +46,4 @@ In case of an Out Of Vocabulary word, we use the most similar word in the CMU Di
 ## Architecture
 We used an LSTM model which predicts for a character (or in our case phoneme) and a sequence of previous characters the next character.
 
+[model](./ressources/img/model_architecture.png)
