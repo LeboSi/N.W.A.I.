@@ -54,6 +54,7 @@ We used an LSTM model which predicts for a character (or in our case phoneme) an
 - Metric : Accuracy
 - Optimizer : Adam
 - Learning Rate = 0.001
+
 We trained the model with a Google Colaboratory.
 
 By 25 epochs, the model converges.
