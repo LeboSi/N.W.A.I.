@@ -46,4 +46,56 @@ In case of an Out Of Vocabulary word, we use the most similar word in the CMU Di
 ## Architecture
 We used an LSTM model which predicts for a character (or in our case phoneme) and a sequence of previous characters the next character.
 
-[model](./ressources/img/model_architecture.png)
+![model](https://github.com/jdelaunay/N.W.A.I./blob/master/ressources/img/model_architecture.png)
+
+## Training
+
+- Loss : Crossentropy
+- Metric : Accuracy
+- Optimizer : Adam
+- Learning Rate = 0.001
+We trained the model with a Google Colaboratory.
+
+By 25 epochs, the model converges.
+
+# Results
+Some examples of verses we obtained with our model :
+
+### Example 1:
+> Friends  money   from the city of a **bitch**
+
+> Life gold digger and who ass nigger  be **teach**
+
+> And you  seen your  from the **park**
+
+> Little scrap  i got my **stacks**
+
+> And  seeing my city  still on the seber street
+
+> Like ha said **like**
+
+> When  while life is **high**
+
+### Example 2:
+> Six six drinks in the **bend**
+
+> But i got my friends and the crib **and**
+
+> And now that i was like to **stranger**
+
+> I can tell them to come to me
+
+> Sipping on that pussy ass **nigger**
+
+### Example 3:
+> In the car we gonna go down that we can see
+
+> This is for the fifty five with the **liquor**
+
+> The bigger was the strips to the **floor**
+
+> And the pride when i was the same with the black
+
+> With the bitch she was still a little streets
+
+As we can see, the phoneme level approach permits to obtain some rimes, which is satisfying since we didn't intend to generate lyrics which had meaning. It could be very interesting however to combine this approach with another one focused on the meaning of the generated verses.
