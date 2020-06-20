@@ -41,3 +41,8 @@ Some examples:
 - When             W EH1 N / HH W EH1 N / W IH1 N / HH W IH1 N
 
 In case of an Out Of Vocabulary word, we use the most similar word in the CMU Dictionary.
+
+# Network architecture and training
+## Architecture
+We used an LSTM model which predicts for a character (or in our case phoneme) and a sequence of previous characters the next character.
+
